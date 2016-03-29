@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link type="text/css" rel="stylesheet" href="css/gf.css">
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/jquery-1.12.2.min.js" charset="utf-8"></script>
+    <script src="js/jquery-ui-1.11.4/jquery-ui.min.js" charset="utf-8"></script>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<div id="sidebar">
+    <div id="gf_control">
+        <h3>Geofences</h3>
+        <button id="gf_load_button">Restore</button>
+        <button id="gf_clear_button">Clear</button>
+        <button id="gf_save_button">Save</button>
+    </div>
+    <hr>
+    <h3>Hits</h3>
+    <button id="hits_clear_button">Clear</button>
+    <input type="checkbox" id="hits_breadcrumbs"><label for="hits_breadcrumbs">Breadcrumbs</label>
+
+    <div id="gf_hits">
+        <table id="hits_table">
+            <thead>
+                <tr><th>Subscriber</th><th>Geofence</th><th>Cell</th></tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="canvas"></div>
+<script src="js/gf.js" charset="utf-8"></script>
+</body>
