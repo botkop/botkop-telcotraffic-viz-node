@@ -1,0 +1,9 @@
+@import url("common.css");
+
+div#control {
+    width: 40%;
+}
+
+select {
+    float: right;
+}

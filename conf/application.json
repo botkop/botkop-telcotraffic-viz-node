@@ -1,5 +1,7 @@
 {
   "http.port": 3010,
   "geofence.file": "work/traffic-geofences.json",
-  "geofence.topic": "geofence-topic"
+  "geofence.topic": "geofence-topic",
+  "celltower.stats.topic": "celltower-stats-topic",
+  "subscriber.stats.topic": "subscriber-stats-topic"
 }

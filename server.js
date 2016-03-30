@@ -21,7 +21,8 @@ var kafka = require('kafka-node'),
 ;
 
 var kafkaConsumer = new HighLevelConsumer( client, [
-            { topic: configuration["geofence.topic"] }
+            { topic: configuration["geofence.topic"] },
+            { topic: configuration["celltower.stats.topic"] }
         ]
     );
 

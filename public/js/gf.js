@@ -1,23 +1,5 @@
 !function() {
 
-var polygonOptions = {
-    editable: true,
-    draggable: true,
-    fillColor: 'white',
-    fillOpacity: 0.10,
-    strokeColor: "#33FFFF",
-    strokeWeight: 1
-}
-
-var mapOptions = {
-    zoom: 3,
-    styles:  [ {
-        "stylers": [ { "invert_lightness": true } ]
-    } ],
-    backgroundColor: "black",
-    center: new google.maps.LatLng(40.69847032728747, -73.9514422416687) // NYC
-}
-
 var Socket = io.connect();
 var Map;
 var Geofences = [];
@@ -60,7 +42,7 @@ function initSideBar() {
 }
 
 function initMap(){
-    Map = new google.maps.Map(document.getElementById('canvas'), mapOptions);
+    Map = new google.maps.Map(document.getElementById('canvas'), MapOptions);
 }
 
 function initDrawingManager(){
@@ -69,7 +51,7 @@ function initDrawingManager(){
             position: google.maps.ControlPosition.TOP_RIGHT,
             drawingModes: [ google.maps.drawing.OverlayType.POLYGON ]
         },
-        polygonOptions: polygonOptions
+        polygonOptions: PolygonOptions
     });
 
     drawingManager.setMap(Map);
@@ -92,7 +74,7 @@ function restoreGeofences() {
                 bounds.extend(latlng);
             });
 
-            var geofence = new google.maps.Polygon(polygonOptions);
+            var geofence = new google.maps.Polygon(PolygonOptions);
             geofence.setPaths(path);
             geofence.setMap(Map);
             Geofences.push(geofence);
