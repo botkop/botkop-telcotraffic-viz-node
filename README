@@ -1,0 +1,27 @@
+Telco traffic visualisation with node.js
+========================================
+
+Prerequisites:
+--------------
+node.js: download from https://nodejs.org/en/download/
+npm: download from https://nodejs.org/en/download/
+
+First time only:
+----------------
+In the checked out/cloned folder, execute:
+    npm install
+
+Configure:
+----------
+Edit the file conf/application.json
+
+Most notably, you may want to edit the location of geofence.file to the same location of the geofence.file parameter in
+botkop:botkop-telcotraffic-spark/src/main/resources/application.conf
+Or you can do as I do, and use a symbolic link.
+The thing is, if you put then to the same physical file, this will be picked up by by the spark job.
+
+Run:
+----
+Execute:
+    node server.js
+
