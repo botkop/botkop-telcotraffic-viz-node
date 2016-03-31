@@ -23,3 +23,7 @@ $( "#select_gf_page" ).on("click", function(){
 $( "#select_hm_page" ).on("click", function(){
     window.location.replace("hm.html")
 });
+
+$( "#select_an_page" ).on("click", function(){
+    window.location.replace("an.html")
+});

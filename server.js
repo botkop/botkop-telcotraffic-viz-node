@@ -15,6 +15,10 @@ var app = express();
 app.http().io();
 app.use(express.static(__dirname + '/public'));
 
+app.get('/', function(req, res) {
+    res.sendfile(__dirname + '/public/gf.html')
+});
+
 var kafka = require('kafka-node'),
     HighLevelConsumer = kafka.HighLevelConsumer,
     client = new kafka.Client()
@@ -22,7 +26,8 @@ var kafka = require('kafka-node'),
 
 var kafkaConsumer = new HighLevelConsumer( client, [
             { topic: configuration["geofence.topic"] },
-            { topic: configuration["celltower.stats.topic"] }
+            { topic: configuration["celltower.stats.topic"] },
+            { topic: configuration["kmeans.outlier.topic"] }
         ]
     );
 

@@ -3,5 +3,6 @@
   "geofence.file": "work/traffic-geofences.json",
   "geofence.topic": "geofence-topic",
   "celltower.stats.topic": "celltower-stats-topic",
-  "subscriber.stats.topic": "subscriber-stats-topic"
+  "subscriber.stats.topic": "subscriber-stats-topic",
+  "kmeans.outlier.topic": "kmeans-outlier-topic"
 }

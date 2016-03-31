@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link type="text/css" rel="stylesheet" href="css/an.css">
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/jquery-1.12.2.min.js" charset="utf-8"></script>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,visualization"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+<div id="sidebar">
+    <div id="page_selector">
+        <div id="select_gf_page">Geofences</div>
+        <div id="select_hm_page">Heatmap</div>
+        <div id="select_an_page">Anomalies</div>
+    </div>
+    <div id="control">
+        <h3>Anomalies</h3>
+
+        <div id="an_div">
+            <table id="an_table">
+                <thead>
+                <tr><th>Subscriber</th><th>Celltower</th><th>Cluster</th><th>Values</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+<div id="canvas"></div>
+<script src="js/common.js" charset="utf-8"></script>
+<script src="js/an.js" charset="utf-8"></script>
+</body>

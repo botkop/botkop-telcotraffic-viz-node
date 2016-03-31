@@ -5,7 +5,7 @@ var Map;
 var Geofences = [];
 var GeofenceHits = [];
 var GeofenceHitsOrder = [];
-var ShowBreadcrumbs = false;
+var ShowBreadcrumbs = true;
 
 initMap();
 initSideBar();

@@ -1,0 +1,38 @@
+@import url("common.css");
+
+#canvas {
+    background: white;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.label {
+  fill: #777;
+}
+
+
+div#an_div {
+    overflow-y: auto;
+    height: 40%;
+}
+
+table#an_table {
+    width: 100%;
+}
+
+table#an_table th,td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
