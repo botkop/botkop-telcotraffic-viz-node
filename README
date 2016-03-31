@@ -25,3 +25,13 @@ Run:
 Execute:
     node server.js
 
+
+First impressions:
+------------------
+Use case 1: Geofencing
+    https://raw.githubusercontent.com/botkop/botkop-telcotraffic-viz-node/master/doc/geofences.png
+Use case 2: Heatmap
+    https://raw.githubusercontent.com/botkop/botkop-telcotraffic-viz-node/master/doc/heatmap.png
+Use case 3: Anomaly detection
+    https://raw.githubusercontent.com/botkop/botkop-telcotraffic-viz-node/master/doc/anomalies.png
+
